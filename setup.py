@@ -9,7 +9,7 @@ setup(
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/ScienceForChange/PyOdourCollect",
-    author="Alex Amo (OdourCollect) and Ana Álvarez (COS4CLOUD)",
+    author="Alex Amo (OdourCollect)",
     author_email="alex.amo@scienceforchange.eu",
     license="GPLv3",
     classifiers=[
@@ -21,7 +21,7 @@ setup(
     packages=["pyodourcollect"],
     package_dir={'pyodourcollect': 'src/pyodourcollect'},
     include_package_data=True,
-    install_requires=["requests", "pydantic", "haversine", "openpyxl"],
+    install_requires=["requests", "pydantic", "haversine", "openpyxl", "pandas", "tabulate"],
     entry_points={
         "console_scripts": [
             "odourcollect=pyodourcollect.command_line:main",
