@@ -41,8 +41,8 @@ class OdourDuration(BaseModel):
 
 
 class OCRequest(BaseModel):
-    type: Optional[conint(ge=0, le=9)]  # OdourCollect's odour type (called "category" here). 0 = All, 1-88 = filters
-    subtype: Optional[conint(ge=0, le=89)]  # OdourCollect's odour subtype (called "type" here). 0 = All, 1-9 = filters
+    type: Optional[conint(ge=0, le=9)]  # OdourCollect's odour type (called "category" here). 0 = All, 1-9 = filters
+    subtype: Optional[conint(ge=0, le=89)]  # OdourCollect's odour subtype (called "type" here). 0 = All, 1-89 = filters
     minAnnoy: Optional[conint(ge=-4, le=4)]  # OdourCollect's "hedonic tone", from -4 to 4. 0 = neutral.
     maxAnnoy: Optional[conint(ge=-4, le=4)]
     minIntensity: Optional[conint(ge=0, le=6)]  # "intensity" in OdourCollect, from 0 to 6
